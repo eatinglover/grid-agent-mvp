@@ -463,7 +463,7 @@ case_names = [
     for c in case_library
 ]
 
-st.markdown("## 配网电压治理智能体演示系统")
+
 
 top1, top2, top3 = st.columns([3, 1, 1])
 
