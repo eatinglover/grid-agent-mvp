@@ -1,0 +1,168 @@
+[
+  {
+    "case_id": "SIM_REAL_001",
+    "source_case_id": "REAL_CASE_003",
+    "area_id": "SJG_001",
+    "area_name": "孙家沟1变台模拟实时工况",
+    "timestamp": "2026-05-15 12:30:00",
+    "voltage": {
+      "max_pu": 1.145,
+      "min_pu": 0.93,
+      "upper_limit_pu": 1.07,
+      "lower_limit_pu": 0.93
+    },
+    "pv_power_kw": 180,
+    "load_power_kw": 80,
+    "devices": [
+      {
+        "device_id": "AVR_SJG_001",
+        "device_type": "AVR",
+        "device_name": "60kVA双向低压调压器",
+        "status": "online",
+        "current_tap": 1,
+        "tap_min": -5,
+        "tap_max": 5,
+        "tap_step_percent": 1.25
+      }
+    ],
+    "expected_reference_strategy": "双向调压器降档治理过电压"
+  },
+  {
+    "case_id": "SIM_REAL_002",
+    "source_case_id": "REAL_CASE_005",
+    "area_id": "NYN_513",
+    "area_name": "北关513南营南储能台区模拟实时工况",
+    "timestamp": "2026-05-15 13:00:00",
+    "voltage": {
+      "max_pu": 1.095,
+      "min_pu": 1.015,
+      "upper_limit_pu": 1.07,
+      "lower_limit_pu": 0.93
+    },
+    "pv_power_kw": 218,
+    "load_power_kw": 90,
+    "devices": [
+      {
+        "device_id": "ESS_NYN_001",
+        "device_type": "ESS",
+        "device_name": "低压储能装置",
+        "status": "online",
+        "soc": 0.55,
+        "soc_min": 0.2,
+        "soc_max": 0.9,
+        "max_charge_kw": 100,
+        "max_discharge_kw": 100
+      }
+    ],
+    "expected_reference_strategy": "储能充电吸收光伏有功，削峰填谷"
+  },
+  {
+    "case_id": "SIM_REAL_003",
+    "source_case_id": "REAL_CASE_007",
+    "area_id": "MJY_004",
+    "area_name": "马家营综合4台区有载调压模拟实时工况",
+    "timestamp": "2026-05-15 18:30:00",
+    "voltage": {
+      "max_pu": 1.02,
+      "min_pu": 0.895,
+      "upper_limit_pu": 1.07,
+      "lower_limit_pu": 0.93
+    },
+    "pv_power_kw": 20,
+    "load_power_kw": 360,
+    "devices": [
+      {
+        "device_id": "OLTC_MJY_001",
+        "device_type": "OLTC",
+        "device_name": "免维护有载调压装置",
+        "status": "online",
+        "current_tap": 0,
+        "tap_min": -5,
+        "tap_max": 5,
+        "tap_step_percent": 1.25,
+        "today_action_count": 2,
+        "max_daily_action_count": 10
+      }
+    ],
+    "expected_reference_strategy": "有载调压升档治理低电压"
+  },
+  {
+    "case_id": "SIM_REAL_004",
+    "source_case_id": "REAL_CASE_011",
+    "area_id": "HZC_513",
+    "area_name": "贺庄村光伏集群控制模拟实时工况",
+    "timestamp": "2026-05-15 12:10:00",
+    "voltage": {
+      "max_pu": 1.115,
+      "min_pu": 1.03,
+      "upper_limit_pu": 1.07,
+      "lower_limit_pu": 0.93
+    },
+    "pv_power_kw": 160,
+    "load_power_kw": 65,
+    "devices": [
+      {
+        "device_id": "INV_CLUSTER_001",
+        "device_type": "PV_INVERTER_CLUSTER",
+        "device_name": "光伏逆变器集群控制模块",
+        "status": "online",
+        "reactive_capacity_kvar": 120,
+        "active_curtailment_max_kw": 20
+      }
+    ],
+    "expected_reference_strategy": "优先逆变器无功调节，必要时少量有功削减"
+  },
+  {
+  "case_id": "SIM_REAL_005",
+  "source_case_id": "REAL_CASE_010",
+  "area_id": "MFC_001",
+  "area_name": "马坊村1号综合台区双向越限模拟实时工况",
+  "timestamp": "2026-05-15 21:00:00",
+  "time_period": "night",
+  "voltage": {
+    "max_pu": 1.095,
+    "min_pu": 0.885,
+    "upper_limit_pu": 1.07,
+    "lower_limit_pu": 0.93
+  },
+  "pv_power_kw": 0,
+  "load_power_kw": 190,
+  "devices": [
+    {
+      "device_id": "AVR_MFC_001",
+      "device_type": "AVR",
+      "device_name": "低压线路自动调压器",
+      "status": "online",
+      "current_tap": 0,
+      "tap_min": -8,
+      "tap_max": 16,
+      "tap_step_percent": 1.25
+    }
+  ],
+  "expected_reference_strategy": "夜间低电压，自动调压器升压补偿"
+},
+  {
+    "case_id": "SIM_REAL_006",
+    "source_case_id": "REAL_CASE_001",
+    "area_id": "HSS_001",
+    "area_name": "红石山台区汇流箱改造后模拟实时工况",
+    "timestamp": "2026-05-15 12:00:00",
+    "voltage": {
+      "max_pu": 1.06,
+      "min_pu": 0.98,
+      "upper_limit_pu": 1.07,
+      "lower_limit_pu": 0.93
+    },
+    "pv_power_kw": 220,
+    "load_power_kw": 100,
+    "devices": [
+      {
+        "device_id": "COMBINER_HSS_001",
+        "device_type": "COMBINER_BOX",
+        "device_name": "光伏汇流箱",
+        "status": "online"
+      }
+    ],
+    "expected_reference_strategy": "改造后电压正常，无需动作"
+  }
+]

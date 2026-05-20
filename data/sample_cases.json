@@ -1,0 +1,115 @@
+[
+  {
+    "case_id": "CASE_001",
+    "area_id": "TQ_001",
+    "area_name": "仅双向调压器台区",
+    "timestamp": "2026-05-15 14:00:00",
+    "voltage": {
+      "max_pu": 1.085,
+      "min_pu": 1.02,
+      "upper_limit_pu": 1.07,
+      "lower_limit_pu": 0.93
+    },
+    "pv_power_kw": 310,
+    "load_power_kw": 160,
+    "devices": [
+      {
+        "device_id": "AVR_001",
+        "device_type": "AVR",
+        "device_name": "双向调压器",
+        "status": "online",
+        "current_tap": 0,
+        "tap_min": -5,
+        "tap_max": 5,
+        "tap_step_percent": 1.25
+      }
+    ]
+  },
+  {
+    "case_id": "CASE_002",
+    "area_id": "TQ_002",
+    "area_name": "SVG台区",
+    "timestamp": "2026-05-15 14:00:00",
+    "voltage": {
+      "max_pu": 1.092,
+      "min_pu": 1.03,
+      "upper_limit_pu": 1.07,
+      "lower_limit_pu": 0.93
+    },
+    "pv_power_kw": 420,
+    "load_power_kw": 190,
+    "devices": [
+      {
+        "device_id": "SVG_001",
+        "device_type": "SVG",
+        "device_name": "静止无功发生器",
+        "status": "online",
+        "capacity_kvar": 500,
+        "current_q_kvar": 0
+      }
+    ]
+  },
+  {
+    "case_id": "CASE_003",
+    "area_id": "TQ_003",
+    "area_name": "OLTC+储能台区",
+    "timestamp": "2026-05-15 14:00:00",
+    "voltage": {
+      "max_pu": 1.088,
+      "min_pu": 1.015,
+      "upper_limit_pu": 1.07,
+      "lower_limit_pu": 0.93
+    },
+    "pv_power_kw": 500,
+    "load_power_kw": 220,
+    "devices": [
+      {
+        "device_id": "OLTC_001",
+        "device_type": "OLTC",
+        "device_name": "有载调压装置",
+        "status": "online",
+        "current_tap": 2,
+        "tap_min": -5,
+        "tap_max": 5,
+        "tap_step_percent": 1.25,
+        "today_action_count": 3,
+        "max_daily_action_count": 10
+      },
+      {
+        "device_id": "ESS_001",
+        "device_type": "ESS",
+        "device_name": "储能装置",
+        "status": "online",
+        "soc": 0.62,
+        "soc_min": 0.2,
+        "soc_max": 0.9,
+        "max_charge_kw": 120,
+        "max_discharge_kw": 120
+      }
+    ]
+  },
+  {
+    "case_id": "CASE_004",
+    "area_id": "TQ_004",
+    "area_name": "电压正常台区",
+    "timestamp": "2026-05-15 14:00:00",
+    "voltage": {
+      "max_pu": 1.045,
+      "min_pu": 0.985,
+      "upper_limit_pu": 1.07,
+      "lower_limit_pu": 0.93
+    },
+    "pv_power_kw": 260,
+    "load_power_kw": 240,
+    "devices": [
+      {
+        "device_id": "SVG_002",
+        "device_type": "SVG",
+        "device_name": "静止无功发生器",
+        "status": "online",
+        "capacity_kvar": 300,
+        "current_q_kvar": 0
+      }
+    ]
+  }
+]

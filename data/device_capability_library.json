@@ -1,0 +1,137 @@
+[
+  {
+    "device_type": "AVR",
+    "device_name": "双向低压调压器",
+    "capabilities": [
+      "tap_up",
+      "tap_down",
+      "bidirectional_voltage_regulation"
+    ],
+    "suitable_for": [
+      "over_voltage",
+      "under_voltage",
+      "two_way_voltage_violation",
+      "long_supply_radius"
+    ],
+    "response_speed": "medium",
+    "economic_score": 8,
+    "engineering_feasibility_score": 9,
+    "priority_rule": "适用于末端电压高低双向越限，动作速度中等，工程改造成本相对较低。"
+  },
+  {
+    "device_type": "OLTC",
+    "device_name": "有载调压装置",
+    "capabilities": [
+      "tap_up",
+      "tap_down",
+      "transformer_voltage_regulation"
+    ],
+    "suitable_for": [
+      "over_voltage",
+      "under_voltage",
+      "voltage_fluctuation",
+      "tap_mismatch"
+    ],
+    "response_speed": "slow",
+    "economic_score": 7,
+    "engineering_feasibility_score": 8,
+    "priority_rule": "适用于持续性电压偏差，不适合频繁快速动作。"
+  },
+  {
+    "device_type": "SVG",
+    "device_name": "静止无功发生器",
+    "capabilities": [
+      "inject_reactive_power",
+      "absorb_reactive_power",
+      "dynamic_voltage_support"
+    ],
+    "suitable_for": [
+      "over_voltage",
+      "under_voltage",
+      "pv_voltage_fluctuation",
+      "reactive_power_imbalance"
+    ],
+    "response_speed": "fast",
+    "economic_score": 6,
+    "engineering_feasibility_score": 7,
+    "priority_rule": "适用于快速电压波动治理，响应速度快，但设备投资成本相对较高。"
+  },
+  {
+    "device_type": "ESS",
+    "device_name": "储能装置",
+    "capabilities": [
+      "charge",
+      "discharge",
+      "peak_shaving",
+      "valley_filling",
+      "active_power_absorption"
+    ],
+    "suitable_for": [
+      "over_voltage",
+      "under_voltage",
+      "pv_reverse_power",
+      "pv_not_consumed_locally"
+    ],
+    "response_speed": "fast",
+    "economic_score": 7,
+    "engineering_feasibility_score": 7,
+    "priority_rule": "适用于光伏出力过剩和负荷峰谷差明显场景，可通过充放电调节电压。"
+  },
+  {
+    "device_type": "PV_INVERTER_CLUSTER",
+    "device_name": "光伏逆变器集群控制",
+    "capabilities": [
+      "Q/V_control",
+      "P/V_control",
+      "reactive_power_absorption",
+      "active_power_curtailment"
+    ],
+    "suitable_for": [
+      "over_voltage",
+      "pv_cluster_over_voltage",
+      "reverse_power_flow",
+      "pv_high_penetration"
+    ],
+    "response_speed": "fast",
+    "economic_score": 9,
+    "engineering_feasibility_score": 8,
+    "priority_rule": "光伏高渗透过电压场景优先采用Q/V无功控制，无功能力不足时才少量P/V有功削减。"
+  },
+  {
+    "device_type": "COMBINER_BOX",
+    "device_name": "光伏汇流箱",
+    "capabilities": [
+      "pv_connection_optimization",
+      "reduce_voltage_stacking",
+      "engineering_reconstruction"
+    ],
+    "suitable_for": [
+      "pv_voltage_stacking",
+      "over_voltage",
+      "pv_users_concentrated"
+    ],
+    "response_speed": "engineering_project",
+    "economic_score": 7,
+    "engineering_feasibility_score": 8,
+    "priority_rule": "适用于光伏用户集中、并网点交错导致电压层层叠加的台区，属于工程改造措施，不是实时控制设备。"
+  },
+  {
+    "device_type": "FLEXIBLE_DC",
+    "device_name": "柔性直流综合调压装置",
+    "capabilities": [
+      "dc_voltage_transfer",
+      "terminal_voltage_support",
+      "reduce_line_voltage_drop"
+    ],
+    "suitable_for": [
+      "under_voltage",
+      "long_supply_radius",
+      "thin_line",
+      "mountain_area"
+    ],
+    "response_speed": "medium",
+    "economic_score": 5,
+    "engineering_feasibility_score": 6,
+    "priority_rule": "适用于超长供电半径、末端低电压且常规交流调压效果有限的场景。"
+  }
+]

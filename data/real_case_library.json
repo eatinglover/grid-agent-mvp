@@ -1,0 +1,420 @@
+[
+  {
+    "case_id": "REAL_CASE_001",
+    "case_name": "红石山台区光伏汇流箱改造解决光伏电压问题",
+    "area_name": "红石山台区",
+    "abnormal_type": [
+      "over_voltage",
+      "pv_voltage_stacking",
+      "reverse_power_flow"
+    ],
+    "devices_or_measures": [
+      "光伏汇流箱",
+      "电缆改造",
+      "集中并网"
+    ],
+    "applicable_conditions": [
+      "光伏用户集中",
+      "光伏与居民用户交错",
+      "低压网架线径较细",
+      "短期无法大范围改造"
+    ],
+    "governance_measures": [
+      "4个汇流箱集中25个光伏用户并网",
+      "光伏与居民负荷相对分离",
+      "降低光伏叠加并网电压"
+    ],
+    "effect": {
+      "iec_before": 68.451,
+      "iec_after": 95.906,
+      "improvement": 27.455,
+      "pv_voltage_before_v": 234.9,
+      "pv_voltage_after_v": 226.8
+    },
+    "strategy_tags": [
+      "combiner_box",
+      "pv_connection_optimization",
+      "line_reconstruction"
+    ],
+    "summary": "适用于光伏用户集中且与居民负荷交错的台区，通过汇流箱集中并网降低光伏电压叠加。"
+  },
+  {
+    "case_id": "REAL_CASE_002",
+    "case_name": "达子营2变台低压网架结构组合优化解决光伏电压双向越限",
+    "area_name": "达子营2变台",
+    "abnormal_type": [
+      "two_way_voltage_violation",
+      "over_voltage_daytime",
+      "under_voltage_night"
+    ],
+    "devices_or_measures": [
+      "低压线路改造",
+      "变台移位",
+      "线径增粗"
+    ],
+    "applicable_conditions": [
+      "单辐射供电",
+      "低压网架结构不合理",
+      "供电半径长",
+      "线径细",
+      "末端光伏集中"
+    ],
+    "governance_measures": [
+      "Φ25裸导线更换为Φ70绝缘导线",
+      "变台移至村落中央",
+      "供电半径由900米缩短至500米"
+    ],
+    "effect": {
+      "voltage_before_min_v": 194,
+      "voltage_before_max_v": 250,
+      "voltage_after_min_v": 216,
+      "voltage_after_max_v": 230,
+      "iec_before": 70.232,
+      "iec_after": 95.118
+    },
+    "strategy_tags": [
+      "line_upgrade",
+      "transformer_relocation",
+      "network_reconstruction"
+    ],
+    "summary": "适用于长供电半径、线径细、末端光伏集中导致双向越限的台区，优先网架优化。"
+  },
+  {
+    "case_id": "REAL_CASE_003",
+    "case_name": "孙家沟1变台双向调压器治理电压质量问题",
+    "area_name": "孙家沟1变台",
+    "abnormal_type": [
+      "two_way_voltage_violation",
+      "over_voltage_daytime",
+      "under_voltage_night"
+    ],
+    "devices_or_measures": [
+      "60kVA双向低压调压器"
+    ],
+    "applicable_conditions": [
+      "末端光伏集中",
+      "白天过电压",
+      "夜晚或负荷突增低电压",
+      "需要末端局部调压"
+    ],
+    "governance_measures": [
+      "低压线路末端加装60kVA双向低压调压器"
+    ],
+    "effect": {
+      "voltage_before_min_v": 177,
+      "voltage_before_max_v": 272,
+      "voltage_after_min_v": 204,
+      "voltage_after_max_v": 238
+    },
+    "strategy_tags": [
+      "AVR_bidirectional_voltage_control"
+    ],
+    "summary": "适用于末端光伏集中且存在高低电压双向越限的台区，使用双向低压调压器。"
+  },
+  {
+    "case_id": "REAL_CASE_004",
+    "case_name": "老庙营2台区光伏用户调相+配变降档解决光伏高电压",
+    "area_name": "老庙营2台区",
+    "abnormal_type": [
+      "over_voltage",
+      "pv_inverter_competition",
+      "pv_generation_drop"
+    ],
+    "devices_or_measures": [
+      "光伏用户调相",
+      "配变降档"
+    ],
+    "applicable_conditions": [
+      "光伏电压不合格",
+      "逆变器竞争上网",
+      "发电量下降与电压超标并存"
+    ],
+    "governance_measures": [
+      "光伏用户调相",
+      "配变降档",
+      "协调光伏厂家进行逆变档位调控"
+    ],
+    "effect": {
+      "station_voltage_qualified_rate_improvement_percent": 5,
+      "area_iec_after": 100.0
+    },
+    "strategy_tags": [
+      "pv_phase_adjustment",
+      "transformer_tap_down"
+    ],
+    "summary": "适用于光伏高电压并伴随逆变器竞争上网、发电量下降的台区。"
+  },
+  {
+    "case_id": "REAL_CASE_005",
+    "case_name": "北关513南营南台区低压储能治理光伏电压越上限",
+    "area_name": "北关513南营南变压器台区",
+    "abnormal_type": [
+      "over_voltage",
+      "pv_reverse_power",
+      "pv_not_consumed_locally"
+    ],
+    "devices_or_measures": [
+      "低压储能"
+    ],
+    "applicable_conditions": [
+      "光伏集中接入",
+      "光伏容量高",
+      "白天发电电压偏高",
+      "兼顾晚高峰电压支撑"
+    ],
+    "governance_measures": [
+      "安装液冷工商业储能设备",
+      "安装在集中光伏用户侧",
+      "实现削峰填谷"
+    ],
+    "effect": {
+      "qualitative": "中午发电电压平稳，同时缓解晚18时至22时末端低电压"
+    },
+    "strategy_tags": [
+      "ESS_charge_for_over_voltage",
+      "ESS_discharge_for_under_voltage"
+    ],
+    "summary": "适用于光伏容量大、集中接入且存在白天过电压与晚间低电压风险的台区。"
+  },
+  {
+    "case_id": "REAL_CASE_006",
+    "case_name": "滦州公司源网荷协同提升电压合格率",
+    "area_name": "滦州典型台区",
+    "abnormal_type": [
+      "under_voltage",
+      "heavy_overload",
+      "long_supply_radius",
+      "tap_mismatch"
+    ],
+    "devices_or_measures": [
+      "台区裂变",
+      "增容布点",
+      "线路改造",
+      "分接头调档"
+    ],
+    "applicable_conditions": [
+      "配变重过载",
+      "供电半径过长",
+      "线径细",
+      "运行档位不匹配"
+    ],
+    "governance_measures": [
+      "台区拆分与增容",
+      "新建及改造0.4kV线路",
+      "变压器分接头动态调档"
+    ],
+    "effect": {
+      "dongangezhuang_iec_before": 55.279,
+      "dongangezhuang_iec_after": 99.823,
+      "wushuizhuang_iec_before": 61.117,
+      "wushuizhuang_iec_after": 99.108
+    },
+    "strategy_tags": [
+      "capacity_expansion",
+      "area_split",
+      "line_upgrade",
+      "tap_adjustment"
+    ],
+    "summary": "适用于重过载、长供电半径、线径细和档位不匹配台区，采用工程改造与运维调整联合治理。"
+  },
+  {
+    "case_id": "REAL_CASE_007",
+    "case_name": "廊坊免维护有载调压改造提升台区电压质量",
+    "area_name": "马家营综合4台区",
+    "abnormal_type": [
+      "voltage_fluctuation",
+      "tap_adjustment_difficulty",
+      "pv_high_penetration"
+    ],
+    "devices_or_measures": [
+      "免维护有载调压装置",
+      "OLTC"
+    ],
+    "applicable_conditions": [
+      "负荷波动大",
+      "停电调档影响大",
+      "光伏影响较大",
+      "需要减少人工维护"
+    ],
+    "governance_measures": [
+      "加装免维护有载调压开关",
+      "配变档位实时调整",
+      "在线监控"
+    ],
+    "effect": {
+      "iec_before_percent": 64.63,
+      "iec_after_percent": 100.0,
+      "voltage_after_range_v": "215-235.5"
+    },
+    "strategy_tags": [
+      "OLTC_dynamic_tap_control"
+    ],
+    "summary": "适用于负荷波动大、光伏渗透率高、传统停电调档成本高的台区。"
+  },
+  {
+    "case_id": "REAL_CASE_008",
+    "case_name": "滦平柔性直流综合调压装置治理末端低电压",
+    "area_name": "一间房公变台区",
+    "abnormal_type": [
+      "under_voltage",
+      "long_supply_radius",
+      "thin_line"
+    ],
+    "devices_or_measures": [
+      "柔性直流综合调压装置"
+    ],
+    "applicable_conditions": [
+      "超长供电半径",
+      "末端低电压",
+      "山区施工困难",
+      "常规调压器效果有限"
+    ],
+    "governance_measures": [
+      "靠近变压器侧安装整流主机",
+      "末端用户侧安装逆变从机",
+      "750V直流传输减少压降"
+    ],
+    "effect": {
+      "qualitative": "提升末端电压且不影响前端用户电压"
+    },
+    "strategy_tags": [
+      "flexible_dc_voltage_regulation"
+    ],
+    "summary": "适用于超长供电半径、末端低电压且常规交流调压效果有限的台区。"
+  },
+  {
+    "case_id": "REAL_CASE_009",
+    "case_name": "广阳光伏用户数据实时采集系统+有载调压改造",
+    "area_name": "廊坊广阳供电中心",
+    "abnormal_type": [
+      "over_voltage",
+      "monitoring_delay",
+      "voltage_fluctuation"
+    ],
+    "devices_or_measures": [
+      "RPA实时采集",
+      "有载调压控制装置"
+    ],
+    "applicable_conditions": [
+      "光伏用户数量多",
+      "数据滞后",
+      "电压异常发现不及时",
+      "负荷波动导致频繁调档"
+    ],
+    "governance_measures": [
+      "RPA每15分钟导出光伏用户电压",
+      "筛选异常电压用户并推送",
+      "配变加装有载调压控制装置"
+    ],
+    "effect": {
+      "qualitative": "提升异常发现率和治理及时率，实现配变档位实时调整"
+    },
+    "strategy_tags": [
+      "real_time_monitoring",
+      "OLTC_dynamic_tap_control"
+    ],
+    "summary": "适用于光伏用户多且数据滞后导致治理不及时的区域。"
+  },
+  {
+    "case_id": "REAL_CASE_010",
+    "case_name": "大厂马坊村1号综合台区低压线路自动调压器治理双向越限",
+    "area_name": "马坊村1号综合台区",
+    "abnormal_type": [
+      "two_way_voltage_violation",
+      "over_voltage_daytime",
+      "under_voltage_night"
+    ],
+    "devices_or_measures": [
+      "低压线路自动调压器",
+      "无功补偿可选",
+      "谐波治理可选"
+    ],
+    "applicable_conditions": [
+      "农村台区供电半径长",
+      "导线线径细",
+      "白天过电压夜晚低电压",
+      "需要快速低成本治理"
+    ],
+    "governance_measures": [
+      "线路末端安装低压自动调压器",
+      "日间降压10%",
+      "夜间升压10%-20%",
+      "RS485/MODBUS/4G/WIFI通信"
+    ],
+    "effect": {
+      "qualitative": "电压波动范围明显减小，用户电压稳定在合格区间"
+    },
+    "strategy_tags": [
+      "AVR_bidirectional_voltage_control"
+    ],
+    "summary": "适用于农村高渗透光伏台区双向越限，自动调压器可实现日间降压和夜间升压。"
+  },
+  {
+    "case_id": "REAL_CASE_011",
+    "case_name": "海港区分布式光伏集群调控治理低压台区电压",
+    "area_name": "贺庄村台区",
+    "abnormal_type": [
+      "over_voltage",
+      "pv_cluster_over_voltage",
+      "reverse_power_flow"
+    ],
+    "devices_or_measures": [
+      "光伏电压治理模组",
+      "逆变器集群控制"
+    ],
+    "applicable_conditions": [
+      "区域性高密度光伏接入",
+      "传统调压手段失效",
+      "需要源网协同",
+      "保障发电收益"
+    ],
+    "governance_measures": [
+      "增设光伏电压治理模组",
+      "统一调整逆变器功率因数",
+      "优先Q/V无功控制",
+      "无功能力耗尽后少量P/V有功削减"
+    ],
+    "effect": {
+      "qualitative": "降低光伏发电电压，减少逆变器脱网和电压越限"
+    },
+    "strategy_tags": [
+      "inverter_var_control",
+      "pv_cluster_control",
+      "active_power_curtailment_last"
+    ],
+    "summary": "适用于光伏高密度集中接入台区，优先逆变器无功协同控制，必要时少量限发。"
+  },
+  {
+    "case_id": "REAL_CASE_012",
+    "case_name": "青龙千里洞台区加装调压器治理双向越限",
+    "area_name": "千里洞台区",
+    "abnormal_type": [
+      "two_way_voltage_violation",
+      "over_voltage",
+      "under_voltage"
+    ],
+    "devices_or_measures": [
+      "高/低压调节装置",
+      "配变降档"
+    ],
+    "applicable_conditions": [
+      "台区位置独立",
+      "供电半径较长",
+      "光伏增长导致电压越上限",
+      "同时存在低电压风险"
+    ],
+    "governance_measures": [
+      "主干5号杆安装高/低压调节装置",
+      "同步配变降档"
+    ],
+    "effect": {
+      "voltage_qualified_rate_improvement_percent": 6.0,
+      "average_violation_duration_reduction_min": 222.8
+    },
+    "strategy_tags": [
+      "AVR_bidirectional_voltage_control",
+      "transformer_tap_down"
+    ],
+    "summary": "适用于供电半径长且存在双向越限的台区，可加装调压设备并配合配变降档。"
+  }
+]

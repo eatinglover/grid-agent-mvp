@@ -1,0 +1,114 @@
+[
+  {
+    "case_id": "MFC_STREAM_001",
+    "source_case_id": "REAL_CASE_010",
+    "area_id": "MFC_001",
+    "area_name": "马坊村1号综合台区实时电压流",
+    "timestamp": "2026-05-15 08:00:00",
+    "time_period": "day",
+    "voltage": {
+      "max_pu": 1.02,
+      "min_pu": 0.98,
+      "upper_limit_pu": 1.07,
+      "lower_limit_pu": 0.93
+    },
+    "pv_power_kw": 30,
+    "load_power_kw": 120,
+    "devices": [
+      {
+        "device_id": "AVR_MFC_001",
+        "device_type": "AVR",
+        "device_name": "低压线路自动调压器",
+        "status": "online",
+        "current_tap": 0,
+        "tap_min": -8,
+        "tap_max": 16,
+        "tap_step_percent": 1.25
+      }
+    ]
+  },
+  {
+    "case_id": "MFC_STREAM_002",
+    "source_case_id": "REAL_CASE_010",
+    "area_id": "MFC_001",
+    "area_name": "马坊村1号综合台区实时电压流",
+    "timestamp": "2026-05-15 11:00:00",
+    "time_period": "day",
+    "voltage": {
+      "max_pu": 1.082,
+      "min_pu": 0.97,
+      "upper_limit_pu": 1.07,
+      "lower_limit_pu": 0.93
+    },
+    "pv_power_kw": 150,
+    "load_power_kw": 80,
+    "devices": [
+      {
+        "device_id": "AVR_MFC_001",
+        "device_type": "AVR",
+        "device_name": "低压线路自动调压器",
+        "status": "online",
+        "current_tap": 0,
+        "tap_min": -8,
+        "tap_max": 16,
+        "tap_step_percent": 1.25
+      }
+    ]
+  },
+  {
+    "case_id": "MFC_STREAM_003",
+    "source_case_id": "REAL_CASE_010",
+    "area_id": "MFC_001",
+    "area_name": "马坊村1号综合台区实时电压流",
+    "timestamp": "2026-05-15 12:30:00",
+    "time_period": "day",
+    "voltage": {
+      "max_pu": 1.12,
+      "min_pu": 0.96,
+      "upper_limit_pu": 1.07,
+      "lower_limit_pu": 0.93
+    },
+    "pv_power_kw": 210,
+    "load_power_kw": 70,
+    "devices": [
+      {
+        "device_id": "AVR_MFC_001",
+        "device_type": "AVR",
+        "device_name": "低压线路自动调压器",
+        "status": "online",
+        "current_tap": 0,
+        "tap_min": -8,
+        "tap_max": 16,
+        "tap_step_percent": 1.25
+      }
+    ]
+  },
+  {
+    "case_id": "MFC_STREAM_004",
+    "source_case_id": "REAL_CASE_010",
+    "area_id": "MFC_001",
+    "area_name": "马坊村1号综合台区实时电压流",
+    "timestamp": "2026-05-15 18:30:00",
+    "time_period": "night",
+    "voltage": {
+      "max_pu": 1.01,
+      "min_pu": 0.905,
+      "upper_limit_pu": 1.07,
+      "lower_limit_pu": 0.93
+    },
+    "pv_power_kw": 0,
+    "load_power_kw": 190,
+    "devices": [
+      {
+        "device_id": "AVR_MFC_001",
+        "device_type": "AVR",
+        "device_name": "低压线路自动调压器",
+        "status": "online",
+        "current_tap": -2,
+        "tap_min": -8,
+        "tap_max": 16,
+        "tap_step_percent": 1.25
+      }
+    ]
+  }
+]
