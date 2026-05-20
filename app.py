@@ -79,6 +79,30 @@ CUSTOM_CSS = """
 """
 
 st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
+st.markdown(
+    """
+    <style>
+    .main-title {
+        font-size: 44px;
+        font-weight: 800;
+        color: #0f172a;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        overflow: visible;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    """
+    <div class="main-title">
+        配网电压治理智能体演示系统
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 
 def init_state():
